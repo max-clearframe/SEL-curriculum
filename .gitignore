@@ -1,0 +1,10 @@
+# Source video (large binary, not needed in deployment)
+cfbookopening.mp4
+
+# Claude workspace
+.claude/
+CLAUDE.md
+
+# OS / editor
+.DS_Store
+Thumbs.db

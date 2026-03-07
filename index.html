@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clearframe — AI & Digital Life Curriculum</title>
+  <meta name="description" content="A social-emotional learning curriculum for the age of AI. Built for K–12 classrooms." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;1,9..40,400&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ── Loader ─────────────────────────────────────────────── -->
+  <div id="loader">
+    <span class="loader-brand">Clearframe</span>
+    <div class="loader-bar-track">
+      <div class="loader-bar-fill"></div>
+    </div>
+    <span class="loader-percent">0%</span>
+  </div>
+
+  <!-- ── Site Header ────────────────────────────────────────── -->
+  <header class="site-header">
+    <a href="#" class="site-logo">Clear<span>frame</span> Learning</a>
+    <nav>
+      <ul class="site-nav">
+        <li><a href="#curriculum">Curriculum</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ── Hero (100vh, full-width) ───────────────────────────── -->
+  <!-- COPY: Replace hero-eyebrow, hero-heading words, and hero-tagline below -->
+  <section class="hero-standalone">
+    <span class="hero-eyebrow">Clearframe Learning SEL Curriculum</span>
+
+    <h1 class="hero-heading" aria-label="Your Students Are Using AI.">
+      <!-- Each word wrapped for stagger animation -->
+      <span class="word"><span class="word-inner">Your</span></span>
+      <span class="word"><span class="word-inner">Students</span></span><br>
+      <span class="word"><span class="word-inner">Are&nbsp;Using</span></span>
+      <span class="word"><span class="word-inner">AI.</span></span>
+    </h1>
+
+    <p class="hero-tagline">
+      They're not being given the frameworks to think about it critically and act ethically. Clearframe Learning SEL Curriculum changes that.
+    </p>
+
+    <div class="scroll-indicator">
+      <div class="scroll-indicator-line"></div>
+      <span class="scroll-indicator-text">Scroll to explore</span>
+    </div>
+  </section>
+
+  <!-- ── Canvas (right-pinned, fixed) ───────────────────────── -->
+  <div id="canvas-wrap">
+    <canvas id="canvas"></canvas>
+  </div>
+
+  <!-- ── Dark Overlay ───────────────────────────────────────── -->
+  <div id="dark-overlay"></div>
+
+  <!-- ── Grade Band Marquee (fixed) ────────────────────────── -->
+  <div class="marquee-wrap" data-enter="47" data-leave="55">
+    <div class="marquee-text">
+      64% OF TEENS HAVE USED A CHATBOT&nbsp;&nbsp;·&nbsp;&nbsp;1 IN 5 USED AI FOR A ROMANTIC RELATIONSHIP&nbsp;&nbsp;·&nbsp;&nbsp;72% HAVE USED A COMPANION APP&nbsp;&nbsp;·&nbsp;&nbsp;
+      64% OF TEENS HAVE USED A CHATBOT&nbsp;&nbsp;·&nbsp;&nbsp;1 IN 5 USED AI FOR A ROMANTIC RELATIONSHIP&nbsp;&nbsp;·&nbsp;&nbsp;72% HAVE USED A COMPANION APP&nbsp;&nbsp;·&nbsp;&nbsp;
+    </div>
+  </div>
+
+  <!-- ── Scroll Container (1000vh) ──────────────────────────── -->
+  <div id="scroll-container">
+
+    <!-- SECTION 1: The Problem — AI & Digital Life -->
+    <!-- Visible: 10–30% scroll | Book: frame 0 (closed) -->
+    <!-- COPY: Replace section-heading and section-body below -->
+    <section class="scroll-section"
+             id="curriculum"
+             data-enter="10" data-leave="30"
+             data-animation="slide-left">
+      <div class="section-inner">
+        <span class="section-label">001 / The Problem</span>
+        <h2 class="section-heading">
+          Why AI<br>Literacy<br>Matters.
+        </h2>
+        <p class="section-body">
+          Widespread AI use reflects a fundamental shift in how we learn, think, and create. The implications for children are especially profound and largely unknown. This is the first generation growing up with tools that can talk back to them. How do we address students using AI for emotional support? Romantic engagement with chatbots? These are documented, real-world problems — and there is no playbook for them.
+        </p>
+        <span class="section-note">A new kind of curriculum for a new kind of challenge.</span>
+      </div>
+    </section>
+
+    <!-- SECTION 2: What is Clearframe SEL -->
+    <!-- Visible: 30–47% scroll | Book opens during this range -->
+    <!-- COPY: Replace section-heading and section-body below -->
+    <section class="scroll-section"
+             data-enter="30" data-leave="47"
+             data-animation="slide-right">
+      <div class="section-inner">
+        <span class="section-label">002 / The Curriculum</span>
+        <h2 class="section-heading">
+          AI and<br>Digital<br>Life.
+        </h2>
+        <p class="section-body">
+          A social-emotional learning curriculum developed by Clearframe Learning that addresses these topics directly. Chapters like <em>Parasocial AI Relationships</em> and <em>AI Psychosis</em> examine emerging mental health impacts observed in users. Chapters like <em>Who Controls This?</em> and <em>AI and Bias</em> examine the inherent biases within large language models.
+        </p>
+      </div>
+    </section>
+
+    <!-- MARQUEE: Grade bands (47–55%) — rendered via fixed marquee-wrap above -->
+    <!-- This empty section creates scroll space for the marquee -->
+    <section class="scroll-section"
+             data-enter="47" data-leave="55"
+             data-animation="fade-up"
+             style="opacity:0; pointer-events:none;">
+    </section>
+
+    <!-- SECTION 4: Features / Lesson Structure -->
+    <!-- Visible: 55–65% scroll | Book fully open -->
+    <!-- COPY: Replace feature items below -->
+    <section class="scroll-section"
+             data-enter="55" data-leave="65"
+             data-animation="fade-up">
+      <div class="section-inner">
+        <span class="section-label">003 / What's Inside</span>
+        <h2 class="section-heading">
+          <!-- COPY: Replace with features headline -->
+          Lessons That<br>Actually<br>Land.
+        </h2>
+        <div class="features-list">
+          <div class="feature-item">
+            <span class="feature-num">01</span>
+            <span class="feature-text">
+              <!-- COPY: Replace feature 1 -->
+              Structured inquiry-based lessons designed to be administered in a variety of contexts: SEL block, science, ELA, or health.
+            </span>
+          </div>
+          <div class="feature-item">
+            <span class="feature-num">02</span>
+            <span class="feature-text">
+              <!-- COPY: Replace feature 2 -->
+              Discussion protocols and reflection tools that build critical thinking alongside emotional vocabulary.
+            </span>
+          </div>
+          <div class="feature-item">
+            <span class="feature-num">03</span>
+            <span class="feature-text">
+              <!-- COPY: Replace feature 3 -->
+              Topics span parasocial AI relationships, algorithmic influence, identity in digital spaces, and ethical decision-making.
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- SECTION 6: Who It's For — Admins + Teachers -->
+    <!-- Visible: 75–84% scroll | Book fully open -->
+    <!-- COPY: Replace audience-body text below -->
+    <section class="scroll-section"
+             data-enter="65" data-leave="78"
+             data-animation="clip-reveal">
+      <div class="section-inner">
+        <span class="section-label">004 / Who It's For</span>
+        <h2 class="section-heading">
+          <!-- COPY: Replace headline if needed -->
+          For Every<br>Stakeholder.
+        </h2>
+        <div class="audience-split">
+          <div class="audience-block accent">
+            <span class="audience-label">For Administrators</span>
+            <p class="audience-body">
+              <!-- COPY: Replace with admin-facing value prop -->
+              A complete, standards-aligned curriculum your district can implement with confidence — no staff AI expertise required. Includes pacing guides, teacher support, and professional development resources.
+            </p>
+          </div>
+          <div class="audience-block">
+            <span class="audience-label">For Teachers</span>
+            <p class="audience-body">
+              <!-- COPY: Replace with teacher-facing value prop -->
+              Facilitation guides and printable materials that make complex AI topics approachable. Designed by an educator, for educators.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: CTA + Contact Form -->
+    <!-- Visible: 84–100% scroll | Canvas fades out -->
+    <section class="scroll-section section-cta"
+             data-enter="80" data-leave="100"
+             data-animation="scale-up"
+             data-persist="true"
+             id="contact">
+      <div class="cta-inner">
+        <span class="section-label">005 / Get in Touch</span>
+        <h2 class="cta-heading">
+          <!-- COPY: Replace with your CTA headline -->
+          Bring This<br>to Your<br>District.
+        </h2>
+        <p class="cta-subhead">
+          <!-- COPY: Replace with your CTA body text -->
+          Tell us about your school or district and we'll reach out with curriculum samples, pricing, and next steps.
+        </p>
+
+        <!-- COPY: Replace action URL with your Formspree endpoint or mailto -->
+        <form class="contact-form" action="mailto:andersmo102@gmail.com" method="POST" enctype="text/plain">
+          <div class="form-row">
+            <div class="form-field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form-field">
+              <label for="school">School / District</label>
+              <input type="text" id="school" name="school" placeholder="School or district name" />
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="3" placeholder="Tell us about your context and goals"></textarea>
+          </div>
+          <button type="submit" class="cta-button">
+            Send message
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 12h14M12 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </section>
+
+  </div><!-- /#scroll-container -->
+
+  <!-- ── Scripts ────────────────────────────────────────────── -->
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <script>gsap.registerPlugin(ScrollTrigger);</script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>
